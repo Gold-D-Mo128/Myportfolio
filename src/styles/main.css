@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+section {
+  height: 95vh;
+}
+li {
+  list-style: none;
+}
+._main {
+  width: 100%;
+  height: 100%;
+  display: inline-flex;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ==================pages */
+/* =======home */
+
+/* unified class */
+._main_ctrs_ {
+  /* height: 90%; */
+  min-height: 94vh;
+  height: 94vh;
+  width: 97%;
+  margin: 0 auto;
+  background-color: #dddddd;
+  overflow: hidden;
+  overflow-y: scroll;
+  border-radius: 10px;
+  position: relative;
+}
+.hide {
+  display: none;
+}
+@media (max-width: 1000px) {
+  ._main_ctrs_ {
+    display: none;
+  }
+  ._main {
+    display: none;
+  }
+  ._App {
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+  }
+  .hide {
+    background-color: #000000;
+    width: 100%;
+    text-align: center;
+    display: block;
+    color: white;
+    z-index: 9999999;
+  }
+  .hide h1 {
+    margin: 0;
+  }
+}
+.toggle {
+  position: fixed;
+  z-index: 99999999;
+  left: 1em;
+  top: 1em;
+  padding: 0px;
+  transform: rotate(-90deg);
+  color: #008177;
+}
+
+.mn_header {
+  /* background: linear-gradient(#141e3080, #dddddd), url("../assets/header.jpg"); */
+  background: linear-gradient(#141e308f, #292929d7), url("../assets/header.jpg");
+  height: 94vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_header_list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  color: white;
+  font-size: larger;
+  font-family: "Chakra Petch", sans-serif;
+}
+.myname {
+  color: #6dd4ca;
+}
+#hd_subtitle h3,
+#hd_title h1 {
+  margin: 0;
+}
+
+.aboutme {
+  height: 94vh;
+  width: 100%;
+}
+.am_container,
+.s_container,
+.p_container {
+  display: flex;
+  height: 100%;
+  text-align: center;
+}
+
+.am_container p,
+.headings,
+.skilllist {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+}
+
+.headings {
+  font-size: 2em;
+  color: #6dd4ca;
+  background-color: #000000;
+  text-shadow: 2px 2px #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap");
+
+.headings h2 {
+  z-index: 999999;
+  font-family: "Roboto Mono", monospace;
+}
+.am_container p {
+  padding: 20px;
+  color: #2f2f2f;
+  font-size: 1.2em;
+  text-align: justify;
+}
+
+.skills {
+  height: 94vh;
+  width: 100%;
+}
+
+.iconsbg {
+  width: 100%;
+  height: 100%;
+}
+
+.ic_bg {
+  transition: 0.3s;
+  color: #4dbbb215;
+  padding: 3px;
+  transform: rotate(-30deg);
+}
+
+.iconsbg svg:hover,
+.textbg:hover {
+  transition: 0s;
+  color: #44ffef;
+  text-shadow: 0px 0px 50px 15px #8efff6;
+}
+
+.iconsbg {
+  position: absolute;
+  width: fit-content;
+}
+
+.textbg {
+  padding: 5px;
+  transition: 0.3s;
+  color: #4dbbb215;
+  text-shadow: none;
+  font-family: "Bebas Neue", cursive;
+  user-select: none;
+}
+
+/* CONTACT STYLES========================== */
+
+.c_container {
+  background-color: bisque;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.contact-me {
+  width: 50%;
+  background-color: #000000;
+  color: white;
+  text-align: center;
+}
+
+.contactForm {
+  /* background-color: #383838; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.TheF {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 30%;
+}
+
+.myInfo {
+  height: 70%;
+}
+
+.mlabel {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 8em;
+  padding: 10px 13px;
+}
+.mlabel textarea {
+  height: 6em;
+  margin: 5px 0px;
+}
+.label {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  height: 5em;
+  padding: 10px 13px;
+}
+.label textarea {
+  height: 2em;
+}
+.label,
+.mlabel {
+  /* background-color: #dddddd; */
+}
